@@ -120,7 +120,7 @@ def onCloze(editor):
                 if cloze_nums:
                     next_cloze_num = max(cloze_nums)
                     # Unless we are reusing, then increment to the next greatest cloze number.
-                    if not editor.mw.app.keyboardModifiers() & Qt.AltModifier:
+                    if not editor.mw.app.keyboardModifiers() & Qt.KeyboardModifier.AltModifier:
                         next_cloze_num += 1
                 else:
                     next_cloze_num = 1
